@@ -1,5 +1,13 @@
+@font-face{
+    font-family: "GothanBold";
+    src: url("../font/GothanBold.otf");
+}
+@font-face{
+    font-family: "Gothan";
+    src: url("../font/Gothan.ttf");
+}
 *{
-    transition: .3s all;
+    transition: .3s all ease;
 }
 body{
     margin: 0;
@@ -8,10 +16,112 @@ body{
 .container{
     width: 1180px;
     margin: 0 auto;
+    text-align: center;
 }
 header{
     margin: 0;
     background: url("../img/back_header.png") no-repeat center;
     background-size: cover;
-    height: 880px;
+    color: white;
+    padding-bottom: 110px ;
+}
+nav.navbar{
+    padding:20px 0px;
+    display: flex;
+    text-align: center;
+}
+.logo{
+    width: 80px;
+    margin-right: 225px;
+}
+ul.menu{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    width: 680px;
+    justify-content: space-around;
+}
+ul.menu li{
+    display: block;
+    box-sizing: border-box;
+}
+ul.menu li:hover a::after{
+    transition: .3s;
+    background: #11749e;
+}
+header a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Myriad Pro",sans-serif;
+    color: white;
+    font-size: 20px;
+}
+header nav.navbar a::after{
+    text-align: center;
+    content: "";
+    height: 5px;
+    background: transparent;
+    display: block;
+    position: relative;
+    bottom: -44px;
+    width: 110%;
+}
+.social{
+    width: 145px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+hr.header{
+    width: 100%;
+    background: white;
+    border: 0px;
+    height: 0.5px;
+    margin: 0;
+    padding: 0;
+}
+.title{
+    font-family: "GothanBold",sans-serif;
+    font-size: 154px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-top: 275px;
+}
+.more{
+    padding: 0;
+    margin: 0;
+    font-family: "Gothan",sans-serif;
+    font-size: 25px;
+    letter-spacing: 20.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #11749e;
+    margin-top:  35px;
+}
+.info{
+    margin-top: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.scroll{
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 65px;
+    display: block;
+    border: 1px solid white ;
+    border-radius: 50px;
+}
+#sc-first{
+    background: #11749e;
+    padding: 100px 0px;
+}
+.letter{
+    color: #3c8daf;
+    font-size: 200px;
+    font-family: "Roboto", sans-serif;
 }
