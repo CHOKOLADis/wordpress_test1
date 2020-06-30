@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digitial-website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
 </head>
@@ -13,12 +16,14 @@
         //1 - 20 min
         //2 - 45min
         //3 - 45min
+        //4 - 50min
+        //5 - 45min
     </script>
     <header>
         <div class="container">
             <nav class="navbar">
-                <img src="img/Logo.png" class="logo">
-                <ul class="menu">
+                <img src="img/Logo.png" class="logo animated jackInTheBox slow">
+                <ul class="menu fadeIn animated slow">
                     <li><a href="">home</a></li>
                     <li><a href="">pages</a></li>
                     <li><a href="">Features</a></li>
@@ -26,7 +31,7 @@
                     <li><a href="">tutorials</a></li>
                     <li><a href="">contact us</a></li>
                 </ul>
-                <div class="social">
+                <div class="social fadeIn animated slow">
                     <a href=""><img src="img/d1wd1.png" alt=""></a>
                     <a href=""><img src="img/asd.png" alt=""></a>
                     <a href=""><img src="img/fve.png" alt=""></a>
@@ -36,20 +41,125 @@
         </div>
         <hr class="header">
         <div class="container">
-            <h1 class="title">
+            <h1 class="title fadeIn animated slower">
                 creatives
             </h1>
-            <p class="more">
+            <p class="more fadeIn animated slow">
                 power by psdfrrebies.com
             </p>
-            <div class="info">scroll down</div>
-            <a href="" class="scroll"><img src="img/arrow.png" alt=""></a>
+            <div class="info animated slow slideInUp">scroll down</div>
+            <a href="#sc-first" class="scroll animated slow slideInUp"><img src="img/arrow.png" alt=""></a>
         </div>
     </header>
     <section id="sc-first" class="sc-first">
         <div class="container">
-            <div class="letter">W</div>
-
+            <div class="sc-title">
+                <div class="letter animated fadeIn slow">W</div>
+                <h2 class="animated fadeInUp slower">we are an awesome agency</h2>
+            </div>
+            <div class="blocks animated fadeInUp slow">
+                <div class="block">
+                    <div class="icon">
+                        <img src="img/Write.png" alt="">
+                    </div>
+                    <h4 class="bl-title">Feature one</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti doloribus dolor maiores?</p>
+                </div>
+                <div class="block">
+                    <div class="icon">
+                        <img src="img/Write.png" alt="">
+                    </div>
+                    <h4 class="bl-title">Feature two</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti doloribus dolor maiores?</p>
+                </div>
+                <div class="block">
+                    <div class="icon">
+                        <img src="img/Write.png" alt="">
+                    </div>
+                    <h4 class="bl-title">Feature three</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti doloribus dolor maiores?</p>
+                </div>
+                <div class="block">
+                    <div class="icon">
+                        <img src="img/Write.png" alt="">
+                    </div>
+                    <h4 class="bl-title">Feature four</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti doloribus dolor maiores?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news1">
+        <div class="container">
+            <div class="date animated fadeIn slow">jan 4, 2020 | in culture</div>
+            <div class="news_title animated fadeIn slower">akita inu dog</div>
+            <p class="animated fadeIn slower">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quasi labore quia voluptate voluptas eos, asperiores quam, nam debitis fugit consequatur magnam recusandae facilis eum corporis. Ducimus laboriosam qui praesentium!</p>
+            <p class="animated fadeIn slower">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo nisi non in magnam doloribus?</p>
+        </div>
+        <div class="news_img  animated jackInTheBox slow"></div>
+    </section>
+    <section id="news2">
+        <div class="news_img animated jackInTheBox slow"></div>
+        <div class="container">
+            <div class="date animated fadeIn slow">jan 4, 2020 | in culture</div>
+            <div class="news_title animated fadeIn slower">akita inu dog</div>
+            <p class="animated fadeIn slower">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quasi labore quia voluptate voluptas eos, asperiores quam, nam debitis fugit consequatur magnam recusandae facilis eum corporis. Ducimus laboriosam qui praesentium!</p>
+            <p class="animated fadeIn slower">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nemo nisi non in magnam doloribus?</p>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="container">
+            <div class="sc-title">
+                <div class="letter animated fadeIn slow">B</div>
+                <h2 class="animated fadeInUp slower">Let's blog</h2>
+            </div>
+            <h3>we love clean design and advanced digital solution.</h3>
+            <div class="blogs">
+                <div class="blog">
+                    <img src="img/blog1.png" alt="">
+                    <div class="blog_title">fresh summer campaign</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, necessitatibus illum nam cum magnam recusandae, est sint quas vitae possimus delectus eaque, ea fugit non?</p>
+                </div>
+                <div class="blog">
+                    <img src="img/blog2.png" alt="">
+                    <div class="blog_title">fresh summer campaign</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, necessitatibus illum nam cum magnam recusandae, est sint quas vitae possimus delectus eaque, ea fugit non?</p>
+                </div>
+                <div class="blog">
+                    <img src="img/blog3.png" alt="">
+                    <div class="blog_title">fresh summer campaign</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, necessitatibus illum nam cum magnam recusandae, est sint quas vitae possimus delectus eaque, ea fugit non?</p>
+                </div>
+                <div class="blog">
+                    <img src="img/blog4.png" alt="">
+                    <div class="blog_title">fresh summer campaign</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, necessitatibus illum nam cum magnam recusandae, est sint quas vitae possimus delectus eaque, ea fugit non?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quick_area">
+        <div class="container">
+            <div class="area">
+                <div class="icon"></div>
+                <p class="area_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas, dolor accusantium voluptates error laboriosam distinctio tempora magnam beatae ipsum, est id, consequatur totam natus. Ipsum quas quidem.</p>
+            </div>
+            <div class="area">
+                <div class="icon"></div>
+                <p class="area_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas, dolor accusantium voluptates error laboriosam distinctio tempora magnam beatae ipsum, est id, consequatur totam natus. Ipsum quas quidem.</p>
+            </div>
+        </div>
+    </section>
+    <section id="key_feature">
+        <div class="container">
+            <div class="key_feature_text">
+                <h3 class="title">akita inu dog</h3>
+                <p class="more">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque reiciendis quam provident nobis vitae soluta quod tenetur libero earum eligendi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, dignissimos! Lorem ipsum dolor sit amet.</p>
+                <div class="progressbars">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="phone"></div>
         </div>
     </section>
 </body>

@@ -12,6 +12,8 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Gothan",sans-serif;
+    overflow-x: hidden;
 }
 .container{
     width: 1180px;
@@ -93,7 +95,6 @@ hr.header{
 .more{
     padding: 0;
     margin: 0;
-    font-family: "Gothan",sans-serif;
     font-size: 25px;
     letter-spacing: 20.5px;
     text-transform: uppercase;
@@ -115,13 +116,215 @@ hr.header{
     display: block;
     border: 1px solid white ;
     border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
 }
 #sc-first{
     background: #11749e;
+    color: white;
     padding: 100px 0px;
+}
+.sc-title{
+    position: relative;
 }
 .letter{
     color: #3c8daf;
     font-size: 200px;
     font-family: "Roboto", sans-serif;
+    z-index: 0;
+}
+.sc-title h2{
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-transform: uppercase;
+    width: 50%;
+    top: 42%;
+    left: 25%;
+    font-weight: 900;
+    font-size: 26px;
+    
+}
+.blocks{
+    margin-top: 70px;
+    display: flex;
+    justify-content:space-between;
+}
+.block{
+    width: 260px;
+}
+.blocks .icon{
+    padding: 50px 0;
+    background: #2e85aa;
+    width: 140px;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+.bl-title{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.blocks p{
+    font-size: 15px;
+    line-height: 20px;
+}
+#news1{
+    background: #222222;
+    color: white;
+    display: flex;
+    position: relative;
+}
+#news1 .container{
+    padding: 90px 0px;
+    text-align: left;
+}
+#news1 .news_img{
+    background: url("../img/news1.png") no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.date{
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.news_title{
+    font-size: 25px;
+    text-transform: uppercase;
+    width: 475px;
+    margin: 20px 0px 40px ;
+}
+#news1 p,#news2 p{
+    font-size: 15px;
+    width: 475px;
+    line-height: 20px;
+}
+#news2{
+    background: #f3f3f3;
+    color: #222222;
+    display: flex;
+    position: relative;
+}
+#news2 .container{
+    width: auto;
+    padding: 90px 0px 90px 70px;
+    text-align: left;
+}
+#news2 .news_img{
+    background: url("../img/news2.png") no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 450px;
+}
+#blog{
+    margin:90px 0px;
+}
+#blog .letter{
+    color: #d7d7d7;
+    font-size: 200px;
+    font-family: "Roboto", sans-serif;
+    z-index: 0;
+}
+#blog .sc-title h2{
+    color: #222222;
+}
+#blog h3{
+    color: #2e85aa;
+    text-transform: uppercase;
+    margin:0px;
+    font-size: 30px;
+}
+.blogs{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between ;
+}
+.blog{
+    width: 270px;
+}
+.blog_title{
+    margin: 45px 0px 25px;
+    color: #2e85aa;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+#blog p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+}
+#quick_area{
+    background: #2e85aa;
+    color: white;
+    font-weight: 300;
+    padding: 110px 0px;
+}
+#quick_area .container{
+    display: flex;
+    justify-content: space-between;
+}
+#quick_area .area{
+    display: flex;
+    width: 550px;
+    align-items: flex-start;
+}
+#quick_area .area_text{
+    width: 450px;
+    text-align: left;
+    line-height: 20px;
+    margin: 0;
+}
+#quick_area .icon{
+    width: 70px;
+    height: 70px;
+    background: url("../img/Write2.png") no-repeat center;
+    background-size: contain;
+    margin-right: 30px;
+}
+#key_feature{
+    padding: 100px 0px;
+    background: url("../img/background_key.png") no-repeat center;
+    background-size: cover;
+}
+#key_feature .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.key_feature_text{
+    align-items: center;
+    color: white;
+    text-align: left;
+    width: 480px;
+}
+.key_feature_text .title{
+    font-family: "Gothan",sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.key_feature_text .more{
+    font-family: "Gothan",sans-serif;
+    font-size: 13px;
+    padding: 0;
+    letter-spacing: 0;
+    color: white;
+    font-weight: 300;
+    margin: 40px 0px;
+    text-transform: none;
+    line-height: 20px;
+}
+.progress{
+
+}
+.phone{
+    background: url("../img/phone.png") no-repeat center;
+    background-size: contain;
+    width: 320px;
+    height: 650px;
 }
