@@ -304,7 +304,7 @@ hr.header{
 }
 .key_feature_text .title{
     font-family: "Gothan",sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
 }
@@ -320,7 +320,21 @@ hr.header{
     line-height: 20px;
 }
 .progress{
-
+    background: #11749e;
+    padding:  13px 20px;
+    font-size: 15px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.progress:nth-child(0){
+    width: 330px;
+}
+.progress:nth-child(1){
+    width: 360px;
+}
+.progress:nth-child(2){
+    width: 390px;
 }
 .phone{
     background: url("../img/phone.png") no-repeat center;
