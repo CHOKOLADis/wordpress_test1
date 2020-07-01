@@ -6,6 +6,10 @@
     font-family: "Gothan";
     src: url("../font/Gothan.ttf");
 }
+@font-face{
+    font-family: "Roboto";
+    src: url("../font/RobotoBold.ttf");
+}
 *{
     transition: .3s all ease;
 }
@@ -19,6 +23,7 @@ body{
     width: 1180px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 header{
     margin: 0;
@@ -126,12 +131,20 @@ hr.header{
 }
 .sc-title{
     position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: auto;
 }
 .letter{
-    color: #3c8daf;
+    color: #d7d7d7;
     font-size: 200px;
     font-family: "Roboto", sans-serif;
     z-index: 0;
+    font-weight: 900;
+}
+#sc-first .letter{
+    color: #3c8daf;
 }
 .sc-title h2{
     z-index: 2;
@@ -139,12 +152,8 @@ hr.header{
     padding: 0;
     position: absolute;
     text-transform: uppercase;
-    width: 50%;
-    top: 42%;
-    left: 25%;
     font-weight: 900;
     font-size: 26px;
-    
 }
 .blocks{
     margin-top: 70px;
@@ -222,12 +231,6 @@ hr.header{
 }
 #blog{
     margin:90px 0px;
-}
-#blog .letter{
-    color: #d7d7d7;
-    font-size: 200px;
-    font-family: "Roboto", sans-serif;
-    z-index: 0;
 }
 #blog .sc-title h2{
     color: #222222;
@@ -341,4 +344,109 @@ hr.header{
     background-size: contain;
     width: 320px;
     height: 650px;
+}
+#team {
+    background: white;
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+#team h3{
+    font-size: 30px;
+    font-weight: 300;
+}
+#team .people{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#team  .man{
+    width: 270px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#team .text{
+    background: white;
+    color: black;
+    position: absolute;
+    bottom: -45px;
+    padding: 25px 35px;
+}
+#team .name{
+    color: #11749e;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+}
+#team .job{
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-top: 10px;
+}
+#contact{
+    background: url("../img/contact.png") no-repeat center;
+    background-size: cover;
+    padding: 140px 0px 100px;
+    color: white;
+}
+#contact .letter{
+    color: rgba(255, 255, 255, 0.252);
+    font-size: 248px;
+}
+form{
+    margin-top: 75px;
+}
+form .main{
+    display: flex;
+    justify-content:space-between ;
+}
+input{
+    padding:  15px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    width: 330px;
+    font-family: "Gothan",sans-serif;
+    box-sizing: border-box;
+}
+.message{
+    margin-top: 35px;
+    padding:  15px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    font-family: "Gothan",sans-serif;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    background: #11749e;
+    padding: 20px 60px;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 0px;
+    margin-top: 45px;
+    box-sizing: border-box;
+    width: auto;
+}
+#map{
+    background: url("../img/map.png") no-repeat center;
+    background-size: cover;
+    height: 340px;
+}
+footer{
+    background: #222222;
+    color: white;
+    padding: 40px 0px;
+    height: 20px;
+}
+footer span{
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    left: 0px;
+    
 }
