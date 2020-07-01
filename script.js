@@ -1,15 +1,3 @@
-var i=false;
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1){
-        $('.navbar').addClass("fix");
-        $('div.on_top').css("right","1%");
-    }
-    else{
-        $('div.on_top').css("right","-10%");
-        $('.navbar').removeClass("fix");
-    }
-});
-
 $(function(){
         $("a[href^='#']").click(function(){
                 var _href = $(this).attr("href");
