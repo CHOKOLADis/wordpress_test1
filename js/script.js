@@ -122,3 +122,56 @@ $(window).scroll(function() {
                 }
         });
 });
+
+$(window).scroll(function() {
+        $('section h3').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeIn");
+                }
+        });
+});
+$(window).scroll(function() {
+        $('section p').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeIn");
+                }
+        });
+});
+
+$(window).scroll(function() {
+        $('.progress').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("slideInRight");
+                }
+        });
+});
+$(window).scroll(function() {
+        $('.phone').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("bounceIn");
+                }
+        });
+});
+
+$(window).scroll(function() {
+        $('.man').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeInUp");
+                }
+        });
+});
