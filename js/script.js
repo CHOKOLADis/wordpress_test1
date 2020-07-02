@@ -19,23 +19,106 @@ $(function(){
 });
 
 $(window).scroll(function() {
-        $('.sc_title .letter').each(function(){
+        $('.sc-title .letter').each(function(){
                 var imagePos = $(this).offset().top;
 
                 var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow+800) {
-                $(this).addClass("fadeIn");
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeIn");
                 }
         });
 });
 $(window).scroll(function() {
-        $('.sc_title h2').each(function(){
+        $('.sc-title h2').each(function(){
                 var imagePos = $(this).offset().top;
 
                 var topOfWindow = $(window).scrollTop();
-                if (imagePos < topOfWindow+800) {
-                $(this).addClass("fadeInUp");
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeInUp");
                 }
         });
 });
-    
+$(window).scroll(function() {
+        $('.blocks').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeInUp");
+                }
+        });
+});
+//news1
+$(window).scroll(function() {
+        $('#news1 .container').children().each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeInUp");
+                }
+        });
+});
+$(window).scroll(function() {
+        $('#news1 .news_img').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("jackInTheBox");
+                }
+        });
+});
+//news2
+$(window).scroll(function() {
+        $('#news2 .container').children().each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeInUp");
+                }
+        });
+});
+$(window).scroll(function() {
+        $('#news2 .news_img').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("jackInTheBox");
+                }
+        });
+});
+//blog
+$(window).scroll(function() {
+        $('#blog .blog').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeInUp");
+                }
+        });
+});
+
+$(window).scroll(function() {
+        $('#quick_area .icon').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("bounceInRight");
+                }
+        });
+});
+$(window).scroll(function() {
+        $('#quick_area .area_text').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+650) {
+                        $(this).addClass("fadeInLeft");
+                }
+        });
+});
