@@ -11,12 +11,16 @@ $(window).scroll(function() {
 });
 
 $(function(){
-        $("a[href^='#']").click(function(){
-                var _href = $(this).attr("href");
-                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        $("a.scroll").click(function(){
+                window.scroll({
+                        top: 900,
+                        behavior: 'smooth'
+                });
                 return false;
         });
 });
+
+
 
 $(window).scroll(function() {
         $('.sc-title .letter').each(function(){
